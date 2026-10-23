@@ -1,0 +1,14 @@
+package com.example.ecommerce.repository;
+
+import com.example.ecommerce.model.OrderItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
+
+    List<OrderItem> findByOrderId(Long orderId);
+
+    // Used to block deleting a product that appears in existing orders
+    boolean existsByProductId(Long productId);
+}

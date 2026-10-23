@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/*
+  DESIGN TOKENS - change a color or the font here and the whole site follows.
+  Tailwind's "blue" palette is remapped to the brand color, so every existing
+  class like bg-blue-600 / text-blue-600 (including the admin pages) uses it.
+*/
+@theme {
+  --font-sans: "Kantumruy Pro", "Khmer UI", "Segoe UI", system-ui, sans-serif;
+
+  --color-blue-50: #eef8fd;
+  --color-blue-100: #d9eefb;
+  --color-blue-200: #b3dcf5;
+  --color-blue-500: #2aa3e3;
+  --color-blue-600: #0b8fd6;
+  --color-blue-700: #0877b3;
+  --color-blue-800: #0a5f90;
+
+  --color-navy-800: #1f2a44;
+  --color-navy-900: #151d33;
+}
